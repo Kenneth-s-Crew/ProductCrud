@@ -43,4 +43,9 @@ public class ProductController {
     public ResponseEntity<List<Product>> getdeptName(@RequestParam (name = "deptName")String deptName) {
         return new ResponseEntity<>(ps.getDeptName(deptName), HttpStatus.ACCEPTED);
     }
+
+    @GetMapping("/all")
+    public ResponseEntity<List<Product>> getAll(){
+        return new ResponseEntity<>(ps.findAll(), HttpStatus.ACCEPTED);
+    }
 }

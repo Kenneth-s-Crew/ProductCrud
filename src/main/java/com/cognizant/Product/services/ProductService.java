@@ -36,7 +36,7 @@ public class ProductService {
         return pr.findByDeptName(deptName);
     }
 
-    public List<Product> getAll(){
+    public List<Product> findAll(){
         return pr.findAll();
     }
 }

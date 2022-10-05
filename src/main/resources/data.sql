@@ -1,0 +1,1 @@
+insert into product (productId, deptId,productName,deptName) values (1,2,'milk', 'dairy'),(2,3,'chocolate','candy');
