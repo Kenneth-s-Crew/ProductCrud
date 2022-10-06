@@ -25,13 +25,13 @@ public class ProductController {
 
 
     @GetMapping("/productId")
-    public ResponseEntity<List<Product>> getProductId(@RequestParam (name = "id")int id) {
-        return new ResponseEntity<>(ps.getProductId(id), HttpStatus.ACCEPTED);
+    public ResponseEntity<List<Product>> getProductId(@RequestParam (name = "productId")int productId) {
+        return new ResponseEntity<>(ps.getProductId(productId), HttpStatus.ACCEPTED);
     }
 
     @GetMapping("/deptId")
-    public ResponseEntity<List<Product>> getDeptId(@RequestParam (name = "id")int id) {
-        return new ResponseEntity<>(ps.getDeptId(id), HttpStatus.ACCEPTED);
+    public ResponseEntity<List<Product>> getDeptId(@RequestParam (name = "deptId")int deptId) {
+        return new ResponseEntity<>(ps.getDeptId(deptId), HttpStatus.ACCEPTED);
     }
 
     @GetMapping("/productName")
